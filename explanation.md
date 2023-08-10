@@ -1,28 +1,26 @@
-# Robotic Process Automation
 
-This project was done by Josephat Ole Shangiti, a student of Moringa
+# Creation of folders
 
-## Project Description
+## Requests Folder
 
-This project is about automating workflows by use of bots to automate once triggered.
+To accommodate the spreadsheet containing the data to process.
 
-## Live URL
+## Processed Folder
 
-The link to the project's repo is *https://github.com/OleShangti/Week11-IP-RPA*
+To accommodate the processed spreadsheets.
 
-## Technologies Used
+* There are 3 types of xaml files used to create automation, these are as follows;
 
-* UiPath Studio
-* Zoho Desk Application
-* MS Excel
-* Main.xaml
-* ReadRequest.xaml
-* SaaSAutomation.xaml
+# Main.xaml
 
-## Contact Information
+This is the main workflow which will invoke other workflows and orchestrate the automation.
 
-You can reach me via email [jshangiti@gmail.com]
+# ReadRequest.xaml
 
-## Credits
+This picks the Request Excel file from the folder we created, read the ticket data, and incorporate them in variables for the next workflow to process.
 
-Moringa School
+# SaaSAutomation.xaml
+
+SaaS - Software as a Service Zoho application is used here to obtained/read data from Request file to create support ticket/job card.
+
+NB: Enhanced the "attended automation" type of RPA by including Stop Automation using hotkey triggers. ie. Ctl + c
